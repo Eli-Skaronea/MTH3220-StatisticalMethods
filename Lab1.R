@@ -1,0 +1,16 @@
+murder <- c(15.1, 11.3, 7.8, 10.1, 10.3, 6.8, 3.1, 6.2, 10.7, 13.9)
+illit <- c(2.1, 1.5, 1.8, 1.9, 1.1, 0.7, 1.1, 0.9, 1.3, 2.0)
+is.vector(murder)
+is.vector(illit)
+hist(murder, col = "skyblue4")
+boxplot(murder, col = "yellow1")
+plot(illit, murder, xlim = c(0.5, 2.3), ylim = c(0, 18), 
+     main="Illiteracy vs Murder Rates", xlab = "Illiteracy", 
+     ylab = "Murder Rate", pch= "D", col = "tomato")
+mean(illit)
+mean(murder)
+sd(illit)
+sd(murder)
+nonsmoke <- c(18, 22, 21, 17, 20, 17, 23, 20, 22, 21)
+smoke <- c(16, 20, 14, 21, 20, 18, 13, 15, 17, 21)
+t.test(nonsmoke,smoke)
